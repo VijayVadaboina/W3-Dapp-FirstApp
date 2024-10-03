@@ -21,7 +21,7 @@ import { ShowBalance } from "./ShowBalance";
 
 // Default styles that can be overridden by your app
 import "@solana/wallet-adapter-react-ui/styles.css";
-const wallets = [new PhantomWalletAdapter()];
+import { SendTokens } from "./SendTokens";
 
 function App() {
   return (
@@ -37,7 +37,8 @@ function App() {
           >
             <WalletMultiButton></WalletMultiButton>
             {/* <RequestAirdrop></RequestAirdrop> */}
-            <ShowBalance />
+            {/* <ShowBalance /> */}
+            <SendTokens />
             {/* <WalletDisconnectButton></WalletDisconnectButton> */}
           </div>
         </WalletModalProvider>
